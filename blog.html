@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog - Artículo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="blog-single">
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="social-nav" aria-label="Redes sociales">
+        <ul>
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Tumblr"><i class="fa-brands fa-tumblr" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span></button>
+    </div>
+    <div class="logo-container">
+      <a href="index.html" class="logo" aria-label="Ir al inicio">
+        <img src="assets/img/Logo-negro.png" alt="Logo Mi Blog" />
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="perfil.html">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content single container">
+    <figure class="single-cover">
+      <img src="assets/img/post-1.png" alt="Imagen principal" />
+    </figure>
+
+    <article class="single-article" aria-labelledby="post-title">
+      <header class="single-header">
+        <p class="category">Noticias</p>
+        <h1 id="post-title">Título del Blogpost</h1>
+      </header>
+      <div class="single-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo at distinctio nulla explicabo quasi quo, dignissimos est inventore veniam, a quod eos enim, suscipit assumenda officiis praesentium dolorum vitae provident! Hic quam quia voluptate deleniti assumenda ab itaque perferendis voluptates dignissimos nemo! Tempora impedit pariatur quibusdam exercitationem consectetur ad quaerat! Dolores a excepturi tempora ratione! Atque rem labore beatae ratione. Cum consectetur sapiente culpa ratione odio. Dolorem quisquam consequuntur excepturi corrupti vitae pariatur hic, placeat perspiciatis sequi numquam! Atque quae necessitatibus debitis in cum animi dolor praesentium facere vel doloribus, consectetur adipisicing elit. Illo at distinctio nulla explicabo quasi quo, dignissimos est inventore veniam, a quod eos enim, suscipit assumenda officiis praesentium dolorum vitae provident! Hic quam quia voluptate deleniti assumenda ab itaque perferendis voluptates dignissimos nemo! Tempora impedit pariatur quibusdam exercitationem consectetur ad quaerat! Dolores a excepturi tempora ratione! Atque rem labore beatae ratione. Cum consectetur sapiente culpa ratione odio. Dolorem quisquam consequuntur excepturi corrupti vitae pariatur hic, placeat perspiciatis sequi numquam! Atque quae necessitatibus debitis in cum animi dolor praesentium facere vel doloribus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum voluptatum explicabo, aspernatur, illum cumque officia eaque eius esse eveniet aut deleniti facilis at unde, animi sint quod quis nisi. Nesciunt?, adipisicing elit. Laborum voluptatum explicabo, aspernatur, illum cumque officia eaque eius esse eveniet aut deleniti facilis at unde.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaquem optio, modi hic quas dicta distinctio et animi impedit eum reprehenderit itaque quos accusantium. Asperiores, reprehenderit maxime illo ratione quaerat dolores.Consequuntur ipsum deserunt accusantium nihil alias asperiores quo nemo atque. Nam rem maiores id totam minima eligendi veritatis quod laboriosam exercitationem accusantium, pariatur molestiae ex itaque quae commodi reiciendis! Corporis.Eaque optio, modi hic quas dicta distinctio et animi impedit eum reprehenderit itaque quos accusantium. Asperiores, reprehenderit maxime illo ratione quaerat dolores.Consequuntur ipsum deserunt accusantium nihil alias asperiores quo nemo atque.</p>
+      </div>
+    </article>
+
+    <section class="cta-footer">
+      <article class="mini-card">
+        <div class="mini-icon" aria-hidden="true">📩</div>
+        <h3>Contacto</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </article>
+      <article class="mini-card">
+        <div class="mini-icon" aria-hidden="true">💌</div>
+        <h3>Escribe</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    toggle.addEventListener('click', ()=> header.classList.toggle('menu-open'));
+  </script>
+</body>
+</html>

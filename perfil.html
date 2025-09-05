@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Blog - Sobre mí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="perfil">
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="social-nav" aria-label="Redes sociales">
+        <ul>
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Tumblr"><i class="fa-brands fa-tumblr" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span></button>
+    </div>
+    <div class="logo-container">
+      <a href="index.html" class="logo" aria-label="Ir al inicio">
+        <img src="assets/img/Logo-negro.png" alt="Logo Mi Blog" />
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="perfil.html" class="active">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content perfil-content container">
+    <section class="about-hero" aria-labelledby="about-heading">
+      <div class="about-media">
+        <img src="assets/img/Cover.png" alt="Foto perfil" />
+      </div>
+      <div class="about-body">
+        <h1 id="about-heading">Hola!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nulla asperiores accusamus repellendus ratione saepe qui ipsum, ut fuga exercitationem consequatur, harum omnis deserunt iure ad vel numquam nisi. Praesentium?</p>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-heading">Proyectos</h2>
+      <div class="project-grid">
+        <article class="project-item">
+          <h3>Texto</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, repellat obcaecati facere maxime cumque at! Facere delectus porro, beatae iste dolor laborum, a reprehenderit commodi exercitationem enim minima unde ea?</p>
+        </article>
+        <article class="project-item">
+          <h3>Texto</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, repellat obcaecati facere maxime cumque at! Facere delectus porro, beatae iste dolor laborum, a reprehenderit commodi exercitationem enim minima unde ea?</p>
+        </article>
+        <article class="project-item">
+          <h3>Texto</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, repellat obcaecati facere maxime cumque at! Facere delectus porro, beatae iste dolor laborum, a reprehenderit commodi exercitationem enim minima unde ea?</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-footer">
+      <article class="mini-card">
+        <div class="mini-icon" aria-hidden="true">📩</div>
+        <h3>Contacto</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </article>
+      <article class="mini-card">
+        <div class="mini-icon" aria-hidden="true">💌</div>
+        <h3>Escribe</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    toggle.addEventListener('click', ()=> header.classList.toggle('menu-open'));
+  </script>
+</body>
+</html>
